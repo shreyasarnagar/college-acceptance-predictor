@@ -15,13 +15,13 @@ Using a dataset of past admissions, I trained a **linear regression model** that
 - Evaluates model using MSE and R² score
 - Provides **college recommendation tiers** based on your predicted score
 - Shows a scatter plot of actual vs predicted values
-- Uses techniques I learned in the Supervised Machine Learning: Regression and Classification (https://www.coursera.org/learn/machine-learning) course by DeepLearning.AI
+- Uses techniques I learned in the [Supervised Machine Learning: Regression and Classification] (https://www.coursera.org/learn/machine-learning) course by DeepLearning.AI
 
 ---
 
 ## 📁 Dataset
 
-Source: Graduate Admissions Dataset – Kaggle (https://www.kaggle.com/datasets/mohansacharya/graduate-admissions)
+Source: [Graduate Admissions Dataset]– Kaggle (https://www.kaggle.com/datasets/mohansacharya/graduate-admissions)
 
 Features used:
 - GRE Score
@@ -57,9 +57,20 @@ The model performs well and explains over 80% of the variation in admissions bas
 ## 🔎 Sample Prediction
 
 ### Input:
+```python
 [300, 100, 3, 8.0, 1]  # GRE, TOEFL, Univ Rating, CGPA, Research
 
 ### Output:
 Predicted chance of admit: 65.42%
 Suggested college tier: SUNY Buffalo, UIC, ASU
 
+## 📈 Visualizations
+
+- 🔥 Correlation Heatmap  
+- 🔵 Scatter Plot: Actual vs Predicted
+
+### Correlation Heatmap
+![Correlation Heatmap](CorrelationHeatmap.png)
+
+### Actual vs Predicted
+![Scatter Plot– Actual vs Predicted chance of acceptance](ActualVsPredicted.png)
